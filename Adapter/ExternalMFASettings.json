@@ -1,0 +1,25 @@
+{
+  "OriginIdp": "http://adfs.xxx.se/adfs/services/trust",
+  "TargetIdp": "https://login.idp.eduid.se/idp.xml",
+  "AuthContextClassRef": "https://refeds.org/profile/mfa",
+  "IdentityClaimName": "norEduPersonNIN",
+  "ProxySp": "https:/somedomain.se/ProxyWeb/Default/Index/",
+  "CryptoKey": "F-JaNdRgUjXn2r5u8x/A?D(G+KbPeShV",
+  "PersonServiceImpl": "SQL",
+  "LdapSettings": {
+    "UserName": "",
+    "Password": "",
+    "SearchRoot": "LDAP://dc=,dc=,dc=se",
+    "Filter": "(&(objectClass=user)(sAMAccountName={0}))",
+    "AttributeToRetrieve": "employeeID"
+  },
+  "SqlSettings": {
+    "Settings": [
+      {
+        "ConnectionString": "",
+        "Command": ""
+      }
+    ]
+  }
+
+}

@@ -1,0 +1,34 @@
+﻿
+@model Dictionary<string, string>
+@*@model IEnumerable<System.Security.Claims.Claim>*@
+
+@{
+    ViewBag.Title = "Login result";
+}
+
+<h2>Login Result</h2>
+<p class="alert-danger">No claims found, login failed</p>
+
+@*@if (Model == null)
+{
+    <p class="alert-danger">No claims found, login failed</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>Subject</th>
+            <th>Issuer</th>
+            <th>Type</th>
+            <th>Value</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Key</td>
+                <td>@item.Value</td>
+
+            </tr>
+        }
+    </table>*@
+}
